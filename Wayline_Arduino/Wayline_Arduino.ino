@@ -108,7 +108,7 @@ static void createCompass(){
 }
 static void createRoutes(){
   lv_obj_t*s=lv_obj_create(nullptr);screens[indexOf(Page::Routes)]=s;styleScreen(s);header(s,"ROTAS SALVAS");
-  lv_obj_t*i=label(s,LV_SYMBOL_GPS,C_RED,&lv_font_montserrat_48);lv_obj_align(i,LV_ALIGN_CENTER,0,-60);
+  lv_obj_t*i=label(s,"GPS",C_RED,&lv_font_montserrat_28);lv_obj_align(i,LV_ALIGN_CENTER,0,-60);
   lv_obj_t*empty=label(s,"Nenhuma rota sincronizada ainda.",C_WHITE,&lv_font_montserrat_16);
   lv_obj_set_width(empty,270);lv_obj_set_style_text_align(empty,LV_TEXT_ALIGN_CENTER,LV_PART_MAIN);lv_obj_align(empty,LV_ALIGN_CENTER,0,2);
   lv_obj_t*detail=label(s,"Quando o app enviar uma rota, ela aparecera aqui.",C_MUTED,&lv_font_montserrat_14);
