@@ -1,0 +1,9 @@
+/.pio/
+/build/
+/.pioenvs/
+/.piolibdeps/
+.vscode/
+.idea/
+*.elf
+*.bin
+*.map
